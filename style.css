@@ -1,0 +1,182 @@
+body {
+  font-family: Arial;
+  background-color: #45ccf5;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  color: #000000;
+  text-align: center;
+  padding: 10px;
+  margin: -8px -8px 0 -8px;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  font-size: 24px;
+}   
+div {
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 20px 50px;
+  margin: 50px 100px 50px 300px;
+  background-color: white;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+figure{
+  display:inline;
+  text-align: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 0;
+}
+img{
+  width: 100%;
+  min-width: 400px;
+  max-width: 450px;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+figcaption{
+  margin-top: 8px;
+  font-style: italic;
+}
+.sidebar{
+  width: 220px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #f0f0f0;
+  padding-top: 70px;
+  transition: transform 0,3s ease;
+  z-index: 1000;
+}
+.sidebar ul{
+  list-style-type: none;
+  padding: 10px;
+  margin: 0px 0px 0px 5px;
+}
+.sidebar li{
+  padding: 10px;
+}
+.sidebar a{
+  text-decoration: none ;
+  color: rgb(147, 14, 187);
+  display: block;
+}
+a{
+  word-wrap: break-word;
+}
+ul{
+  list-style-type: disc;
+}
+ol {
+  list-style-type: none;
+  padding: 0px;
+}
+
+ol li {
+  margin: 20px 0px;
+}
+.descricao-imagem {
+    color: #696969;
+    font-size: 14px;
+    margin: 0px 0px 15px 0px;
+}
+.videocentro{
+  display: block;
+  margin: 20px auto;
+  max-width: 500px;
+  height: auto;
+  max-height: 400px;
+}
+.menu-toggle {
+  display: none;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1001;
+  cursor: pointer;
+}
+table {
+  width: 100%;
+  table-layout: fixed;
+  overflow: hidden;
+}
+table td, table th{
+  padding: 8px;
+  word-wrap:  break-word;
+}
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+    }
+  .sidebar.active {
+    transform: translateX(0);
+    }
+  .menu-toggle {
+    display: block;
+  }
+  a{
+    font-size: 14px;
+  }
+  div {
+    margin: 10px;
+    padding: 10px;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  img {
+    max-width: 100%;
+    min-width: auto;
+  }
+  table{
+    font-size: 14px;
+    word-wrap: break-word;
+  }
+  .videocentro {
+    width: 100%;
+  }
+}
+.renovaveis-extra::after {
+  content: "As fontes renováveis, como solar e eólica, permitem a descentralização da geração de energia. Isso possibilita que pequenas comunidades, propriedades rurais ou até residências produzam sua própria eletricidade, aumentando a autonomia energética e reduzindo perdas com transmissão.\A\A No Brasil, o crescimento da energia solar tem sido notável, especialmente na região Nordeste, que apresenta alto índice de radiação solar. Estados como Bahia e Ceará têm se destacado na instalação de usinas fotovoltaicas e projetos de geração distribuída.";
+  display: block;
+  margin-top: 20px;
+  white-space: pre-line;
+}
+
+.naorenovaveis-extra::after {
+  content: "Muitos países ainda dependem fortemente das fontes não renováveis por questões econômicas, geopolíticas e estruturais. O petróleo, por exemplo, é uma das commodities mais negociadas do mundo, influenciando políticas externas e acordos comerciais.\A\A Apesar de ainda dominarem a matriz global, fontes como o carvão mineral vêm perdendo espaço devido à pressão ambiental e à competitividade das renováveis. Grandes potências estão gradualmente desativando usinas a carvão para cumprir metas climáticas.";
+  display: block;
+  margin-top: 20px;
+  white-space: pre-line;
+}
+/*.imagem{
+  display:inline; */ /*Deixa as imagens na mesma linha*/
+  /*gap: 10px;*/ /*espaçamento entre imagens */
+  /*flex-wrap: wrap;*/ /*quebra de linha para telas pequenas */
+/*} */
+
+/*.imagem img {
+  /*width: 100%;*/ /*faz a imagem ocupar 100% da largura disponivel do seu containêr*/
+  /*max-width: 450px;*/ /* largura máximo de cada imagem */
+  /*height: auto;*/ /*altura automatica de acordo com a largura da imagem*/
+  /*max-height: 300px;*/ /*altura maxima da imagem*/
+  /*object-fit: cover;*/ /*garante que a imagem preencha totalmente seu containêr*/
+  /*border-radius: 3px;*/ /*bordas arredondadas*/
+/*}*/
+
